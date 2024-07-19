@@ -3,11 +3,9 @@ class Base
 {
     static void Main()
     {
-        int[] numbers = [1, 2, 3, 4, 5, 6];
-        Person ola = new(){
-            Name = "",
-        };
-        Console.WriteLine(ola.Name);
-        Console.WriteLine(ola.GetAge());
+        Person Rick = new(name: "Rick", lastName: "Bm", age: 30, rol: 2);
+        Person Amber = new(name: "Amber", lastName: "Bm", age: 20, rol: 0);
+        Rick.FullInfo();
+        Amber.FullInfo();
     }
 }
